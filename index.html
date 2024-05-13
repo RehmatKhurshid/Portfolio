@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehmat's Resume</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="shortcuts">
+            <a href="#about">About me</a>
+            <span class="separator"></span>
+            <a href="#skills">My Skills</a>
+            <span class="separator"></span>
+            <a href="#education">Education</a>
+            <span class="separator"></span>
+            <a href="#contact">Contact me</a>
+        </div>
+
+        <header>
+            <h1>REHMAT KHURSHID</h1>
+            <p>BACKEND DEVELOPER</p>
+            <div class="btn-container">
+                <button type="button" class="btn btn-pink">Download Resume</button>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="aboutme" id="about">
+            <div class="about">
+                <h3>About Me</h3>
+            </div>
+            <div class="desc">
+
+                Certainly! Here's a sample "About Me" paragraph tailored for a backend developer's CV:
+
+                I am a dedicated backend developer with a passion for crafting efficient, scalable, and secure
+                solutions. With a strong foundation in programming languages such as C and C++, I thrive on
+                solving complex technical challenges to deliver robust backend systems. My expertise lies in
+                architecting and optimizing databases, implementing RESTful APIs, and integrating with third-party
+                services to ensure seamless functionality. I am committed to staying up-to-date with the latest
+                technologies and best practices in backend development, allowing me to continuously improve and innovate
+                in my field. As a detail-oriented problem solver, I excel in collaborating with cross-functional teams
+                to deliver high-quality software solutions that exceed expectations. With a keen eye for optimization
+                and performance tuning, I am driven to enhance the efficiency and reliability of backend systems to
+                support the growth and success of the organization.
+            </div>
+        </div>
+        <hr class="pink-rule">
+
+        <div class="skills" id="skills">
+            <div class="mySkills">
+                <h3>My Skills</h3>
+            </div>
+            <div class="exp circle">
+                <div class="skill">C</div>
+                <div class="skill">C++</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">Javascript</div>
+                <div class="skill">Bootstrap</div>
+                <div class="skill">GIT</div>
+            </div>
+        </div>
+        <hr class="pink-rule">
+
+        <div class="educationme" id="education">
+            <div class="education">
+                <h3>Education</h3>
+            </div>
+            <ul class="education-list">
+                <li class="education-item">
+                    <h6>blah blah street College</h6><br>BCA <br>(2021-2024)
+                </li>
+                <li class="education-item">
+                    <h6>Qwertyu Street School</h6><br>Higher Secondary School (XII) <br>(2019-2021)
+                </li>
+                <li class="education-item">
+                    <h6>Asdfghjk Street School</h6><br>High School (X) <br> (2004-2018)
+                </li>
+            </ul>
+        </div>
+        <hr class="pink-rule">
+
+        <div class="contact" id="contact">
+            <div class="contact">
+                <div class="subject">
+                    <h3>Contact Me</h3>
+                </div>
+                <div class="two">
+                    <div class="contactMe">
+                        <div class="table-info">
+                            <table class="table table-striped table-hover">
+                                <tr>
+                                    <td>Address:</td>
+                                    <td>Blah Blah street</td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>email@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone:</td>
+                                    <td>1234567890</td>
+                                </tr>
+                                <tr>
+                                    <td>Freelance:</td>
+                                    <td>Available right now</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="icons">
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-github"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="container">
+                            <div class="form-container">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" id="subject"
+                                            placeholder="Enter the subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" id="message" rows="3"
+                                            placeholder="Enter your message"></textarea>
+                                    </div>
+                                    <button type="submit" class="custom-btn">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </main>
+
+    <footer>
+        <a href="#" id="back-to-top">Back to Top</a>
+    </footer>
+    <script>
+        document.getElementById("back-to-top").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+</body>
+
+</html>
